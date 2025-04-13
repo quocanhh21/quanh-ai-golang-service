@@ -3,11 +3,17 @@ package main
 import (
     "log"
     "net/http"
+    "github.com/joho/godotenv"
 
-    "github.com/yourname/quanh-ai-golang-service/internal/handler"
+    "github.com/quocanhh21/quanh-ai-golang-service/internal/handler"
 )
 
 func main() {
+    // Load .env file if present
+    if err := godotenv.Load(); err != nil {
+        log.Println("No .env file found, relying on system environment")
+    }
+
     mux := http.NewServeMux()
     mux.HandleFunc("/api/ai/analyze", handler.AnalyzeEssayHandler)
 

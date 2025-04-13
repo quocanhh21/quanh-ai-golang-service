@@ -5,7 +5,7 @@ import (
     "os"
 
     "github.com/sashabaranov/go-openai"
-    "github.com/yourname/quanh-ai-golang-service/internal/model"
+    "github.com/quocanhh21/quanh-ai-golang-service/internal/model"
 )
 
 func AnalyzeWithOpenAI(req model.AnalyzeRequest) (*model.AnalyzeResponse, error) {

@@ -4,8 +4,8 @@ import (
     "encoding/json"
     "net/http"
 
-    "github.com/yourname/quanh-ai-golang-service/internal/service"
-    "github.com/yourname/quanh-ai-golang-service/internal/model"
+    "github.com/quocanhh21/quanh-ai-golang-service/internal/service"
+    "github.com/quocanhh21/quanh-ai-golang-service/internal/model"
 )
 
 func AnalyzeEssayHandler(w http.ResponseWriter, r *http.Request) {
